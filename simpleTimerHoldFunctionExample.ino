@@ -38,13 +38,12 @@ void timerCheck()
     if (!switchPressed && switchDebouncer)
     {
       switchDebouncer = false;
-      timer.disable(timerID);
+      reset();
     }
     //switch pressed
     else if (switchPressed && !switchDebouncer)
     {
       //resetTimer
-      resetFlag = false; //TODO: check whether this is necessary here
       timer.enable(timerID);
     }
 }
