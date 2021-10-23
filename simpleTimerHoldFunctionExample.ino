@@ -21,9 +21,12 @@ void loop()
   timer.run();
   timerCheck();
 
-  //reset LEDs if timer exceeded
   if (resetFlag)
+  {
+    //Do stuff here if flag hit.
     reset();
+  }
+
 }
 
 void setTimerFlag()
